@@ -1,20 +1,22 @@
-#include <iostream>
-#include <cstring>
+#include<iostream>
+#include<string>
 using namespace std;
-int main() {
-    char str[100];
-    cout << "Enter a string: ";
-    cin >> str;
-    int n = strlen(str);
-    char stack[100];
-    int top = -1;
-    for (int i = 0; i < n; i++) {
-        stack[++top] = str[i];
-    }
-    cout << "Reversed string: ";
-    while (top != -1) {
-        cout << stack[top--];
-    }
-    cout << endl;
-    return 0;
+int n;
+string str;
+char stack[100];
+int top=0;
+int main(){
+	cout<<"enter the string"<<endl;
+	cin>>str;
+	int n=str.length();
+	for(int i=0;i<n;i++)
+	{
+		stack[top++]=str[i];
+	}
+	cout<<"reversed string"<<endl;
+	while(top!=-1)
+	{
+		cout<<stack[top--];
+	}
+	cout<<endl;
 }

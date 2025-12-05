@@ -1,8 +1,4 @@
-#include <iostream>
-#include <vector>
-#include <queue>
-#include <limits.h>
-#include <algorithm>
+#include <bits/stdc++.h
 using namespace std;
 void BFS(int start, vector<vector<int>> &adj, int V) {
     vector<int> visited(V, 0);
